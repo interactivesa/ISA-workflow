@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <g id="list-icon" transform="translate(-153 -339.356)">
+    <g id="Rectangle_523" data-name="Rectangle 523" transform="translate(153 339.356)" fill="none" stroke="#98a1b4" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+      <rect width="24" height="24" stroke="none"/>
+      <rect x="1" y="1" width="22" height="22" fill="none"/>
+    </g>
+    <g id="Polygon_2" data-name="Polygon 2" transform="translate(174 346.356) rotate(180)" fill="none" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M2.5,0,5,3H0Z" stroke="none"/>
+      <path d="M 2.5 0 L 5 3 L 0 3 L 2.5 0 Z" stroke="none" fill="#98a1b4"/>
+    </g>
+    <line id="Line_590" data-name="Line 590" x1="21.546" transform="translate(154.405 347.899)" fill="none" stroke="#98a1b4" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+    <line id="Line_591" data-name="Line 591" x1="12.178" transform="translate(158.911 352.583)" fill="none" stroke="#98a1b4" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+    <line id="Line_592" data-name="Line 592" x1="12.178" transform="translate(158.911 357.267)" fill="none" stroke="#98a1b4" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+  </g>
+</svg>

@@ -1,0 +1,45 @@
+$font-ar: "Poppins";
+$font-en: "Poppins";
+
+$font-path: "../fonts/";
+$img-path: "../images/";
+
+// colors
+
+
+// text
+$black-text:#111111;
+$grey-text:#888888;
+$blue-color:#0E58AE;
+$blue-color2:#0B6DDE;
+
+
+
+
+// bg
+
+
+$theme-colors: (
+  // "primary": $primary-color,
+  // "warning": $orange-color,
+  // "success": $green-color,
+  // "gray": $gray-color,
+  // "red": $red-color
+);
+
+// font weight
+$w-thin: 100; // (Hairline)
+$w-extra-light: 200; // (Ultra Light)
+$w-light: 300;
+$w-normal: 400; // (Regular)
+$w-medium: 500;
+$w-semi-bold: 600; // (Semi Bold)
+$w-bold: 700;
+$w-extra-bold: 800; // (Ultra Bold)
+$w-black: 900; //(Heavy)
+
+
+
+//more 
+
+$raduis-normal : 8px;

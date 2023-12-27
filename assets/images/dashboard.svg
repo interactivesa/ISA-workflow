@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <g id="dashboard" transform="translate(-360 -327.493)">
+    <g id="Rectangle_515" data-name="Rectangle 515" transform="translate(373 327.493)" fill="none" stroke="#98a1b4" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+      <rect width="11" height="11" rx="2" stroke="none"/>
+      <rect x="1" y="1" width="9" height="9" rx="1" fill="none"/>
+    </g>
+    <g id="Rectangle_518" data-name="Rectangle 518" transform="translate(373 340.493)" fill="none" stroke="#98a1b4" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+      <rect width="11" height="11" rx="2" stroke="none"/>
+      <rect x="1" y="1" width="9" height="9" rx="1" fill="none"/>
+    </g>
+    <g id="Rectangle_516" data-name="Rectangle 516" transform="translate(360 327.493)" fill="none" stroke="#98a1b4" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+      <rect width="11" height="11" rx="2" stroke="none"/>
+      <rect x="1" y="1" width="9" height="9" rx="1" fill="none"/>
+    </g>
+    <g id="Rectangle_517" data-name="Rectangle 517" transform="translate(360 340.493)" fill="none" stroke="#98a1b4" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+      <rect width="11" height="11" rx="2" stroke="none"/>
+      <rect x="1" y="1" width="9" height="9" rx="1" fill="none"/>
+    </g>
+  </g>
+</svg>

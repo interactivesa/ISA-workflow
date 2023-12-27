@@ -1,0 +1,7 @@
+<svg id="ic-view" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30">
+  <rect id="Rectangle_527" data-name="Rectangle 527" width="30" height="30" rx="5" fill="none"/>
+  <g id="eye" transform="translate(3.797 3.679)">
+    <path id="Path_726" data-name="Path 726" d="M15,11.709A3.289,3.289,0,1,1,11.709,8.42,3.285,3.285,0,0,1,15,11.709Z" transform="translate(-0.505 -0.383)" fill="none" stroke="#7e8594" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+    <path id="Path_727" data-name="Path 727" d="M11.2,18.923c3.243,0,6.265-1.911,8.368-5.218a4.892,4.892,0,0,0,0-4.767C17.468,5.631,14.446,3.72,11.2,3.72S4.939,5.631,2.835,8.938a4.892,4.892,0,0,0,0,4.767C4.939,17.012,7.961,18.923,11.2,18.923Z" transform="translate(0 0)" fill="none" stroke="#7e8594" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+  </g>
+</svg>

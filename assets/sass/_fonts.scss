@@ -1,0 +1,30 @@
+
+@font-face {
+  font-family: "Poppins";
+  src: url($font-path + "Poppins-Regular.ttf");
+  font-weight: $w-normal;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url($font-path + "Poppins-Medium.ttf");
+  font-weight: $w-medium;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url($font-path + "Poppins-SemiBold.ttf");
+  font-weight: $w-semi-bold;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url($font-path + "Poppins-Bold.ttf");
+  font-weight: $w-bold;
+}
+// @font-face {
+//   font-family: "URWDINArabic";
+//   src: url($font-path + "URWDINArabic.ttf");
+//   font-weight: $w-normal;
+// }
+
