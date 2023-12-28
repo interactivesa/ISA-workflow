@@ -2,6 +2,7 @@ body{
   position: relative;
   min-height: 100vh;
   background-color: #F6F6F8;
+  padding-top: 65px;
 }
 
 
@@ -20,7 +21,7 @@ a{
   align-items: center;
   justify-content: center;
   font-size: 16px;
-  font-weight: $w-normal;
+  font-weight: $w-semi-bold;
   color: $blue-color2;
   border: 1px solid $blue-color2;
   border-radius: 4px;
@@ -29,9 +30,17 @@ a{
     img{
       width: 18px;
       height: 18px;
-      margin-#{$end-direction}:10px ;
+      margin-#{$start-direction}:10px ;
     }
   }
+}
+
+.white-card{
+  background-color: #fff;
+  border-radius: $raduis-normal;
+  padding: 20px;
+  padding-bottom: 35px;
+  box-shadow: 0 1px 3px rgba($color: $black-text, $alpha: 0.07);
 }
 
 
@@ -39,6 +48,7 @@ a{
 
 .side-nav-col , .content-col{
   padding: 0;
+  position: relative;
 }
 .side-nav{
   // position: absolute;
@@ -53,6 +63,13 @@ a{
   // padding-#{$end-direction}: 32px;
   display: grid;
   border-right: 1.5px solid #E8E9EB;
+
+  // fixed position
+  position: fixed;
+  #{$start-direction}: 0;
+  top: 0;
+  width: inherit;
+  z-index: 99;
 
   .top-sec{
     background-color: #fff;
@@ -301,6 +318,14 @@ a{
   background-color: #fff;
   box-shadow: 1px 1px 10px rgba($color: #131621, $alpha: 0.07);
   height: 65px;
+
+
+    // fixed position
+    position: fixed;
+    #{$end-direction}: 0;
+    top: 0;
+    width: inherit;
+
   h3{
     font-size: 18px;
     font-weight: $w-semi-bold;
@@ -394,6 +419,7 @@ a{
   padding-#{$start-direction}: 40px;
   padding-#{$end-direction}: 25px;
   max-width: 100%;
+  padding-bottom: 60px;
   // max-width: calc(100% - 305px);
   // margin-#{$start-direction}: 305px;
   .breadcrumb{
@@ -523,11 +549,6 @@ a{
 .table-sec{
 
   .white-card{
-    background-color: #fff;
-    border-radius: $raduis-normal;
-    padding: 20px;
-    padding-bottom: 35px;
-    box-shadow: 0 1px 3px rgba($color: $black-text, $alpha: 0.07);
     .top-sec{
       display: flex;
       justify-content: space-between;
@@ -544,6 +565,7 @@ a{
     .home-table{
       table{
         thead{
+          border-bottom: 2px solid #E8EAF3;
           th{
             height: 54px;
             background-color: #F6F8FB;
@@ -561,7 +583,164 @@ a{
             border: none;
             height: 54px;
             vertical-align: middle;
+
+            .status{
+              span{
+                width: 8px;
+                height: 8px;
+                border-radius: 50%;
+                margin-#{$end-direction}: 7px;
+                display: inline-block;
+                vertical-align: middle;
+              }
+              p{
+                display: inline-block;
+                font-size: 16px;
+                font-weight: $w-normal;
+                margin: 0;
+              }
+
+              &.new{
+                p{
+                  color: #3D87DD;
+                }
+                span{
+                  background-color: #3D87DD;
+                }
+              }
+              &.late{
+                p{
+                  color: #F24D5B;
+                }
+                span{
+                  background-color: #F24D5B;
+                }
+              }
+              &.done{
+                p{
+                  color: #44C055;
+                }
+                span{
+                  background-color: #44C055;
+                }
+              }
+              &.near{
+                p{
+                  color: #FF9D00;
+                }
+                span{
+                  background-color: #FF9D00;
+                }
+              }
+            }
           }
+        }
+      }
+
+      .pagination{
+        margin-bottom: 0;
+        margin-top: 30px;
+        li{
+          
+          .page-link{
+            border: 0;
+            padding: 0;
+            font-size: 14px;
+            font-weight: $w-normal;
+            color: #98A1B4;
+            width: 22px;
+            height: 28px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 3px;
+            margin-#{$end-direction}: 2px;
+            &.active{
+              color: #fff;
+              background-color: $blue-color2;
+              width: 28px;
+              font-weight: $w-semi-bold;
+            }
+          }
+
+          &.page-first , &.page-last{
+            .page-link{
+              border: 1px solid #98A1B4;
+              border-radius: 10px;
+              height: 28px;
+              width: 38px;
+              background-color: transparent !important;
+
+            }
+          }
+          &.page-first{
+            margin-#{$end-direction}: 8px;
+          }
+          &.page-last{
+            margin-#{$start-direction}: 8px;
+          }
+          &.prev-next {
+            .page-link{
+              width: auto;
+              background-color: transparent !important;
+            }
+            &.prev{
+              margin-#{$end-direction}: 45px;
+            }
+            &.next{
+              margin-#{$start-direction}: 45px;
+            }
+          }
+        }
+      }
+    }
+
+
+    .search-sec{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: flex-start;
+      margin-bottom: 20px;
+
+      label{
+        font-size: 15px;
+        font-weight: $w-semi-bold;
+        color: $black-text;
+        margin-#{$end-direction}: 17px;
+      }
+      .form-control{
+        font-size: 15px;
+        font-weight: $w-normal;
+        color: $grey-text;
+        line-height: 23px;
+        background-color: #F2F3F5;
+        height: 44px;
+        border: none;
+        border-radius: 4px;
+      }
+      .search-box{
+        display: flex;
+        align-items: center;
+        margin-#{$end-direction}: 35px;
+        .search-input{
+          width: 270px;
+          background-image: url(../images/Icons-Actions-ic-actions-search.svg);
+          background-repeat: no-repeat;
+          background-position: 95% center ;
+          padding-right: 35px;
+        }
+      }
+      .select-box{
+        display: flex;
+        align-items: center;
+        margin-#{$end-direction}: 35px;
+
+        select{
+          width: 240px;
+          background-image: url(../images/Icons-Chevron-ic-chevron-down.svg);
+          background-size: 25px;
+          padding-right: 35px;
         }
       }
     }
@@ -575,3 +754,19 @@ a{
 }
 
 
+
+.form-sec{
+  .white-card{
+    padding: 30px 30px 40px;
+    margin-top: 40px;
+    .top-sec{
+      margin-bottom: 47px;
+      h3{
+        font-size: 25px;
+        font-weight: $w-semi-bold;
+        color: $black-text;
+        margin-bottom: 0;
+      }
+    }
+  }
+}
