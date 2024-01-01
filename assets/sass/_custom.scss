@@ -14,7 +14,19 @@ body{
 a{
   text-decoration: none;
 }
-
+.primary-btn{
+  padding: 12px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  font-weight: $w-semi-bold;
+  color: #fff;
+  background-color: $blue-color2;
+  border: none;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba($color: $black-text, $alpha: 0.07);
+}
 .secondary-btn{
   padding: 9px 16px;
   display: flex;
@@ -325,7 +337,7 @@ a{
     #{$end-direction}: 0;
     top: 0;
     width: inherit;
-
+    z-index: 999;
   h3{
     font-size: 18px;
     font-weight: $w-semi-bold;
@@ -763,6 +775,263 @@ a{
       margin-bottom: 47px;
       h3{
         font-size: 25px;
+        font-weight: $w-semi-bold;
+        color: $black-text;
+        margin-bottom: 0;
+      }
+    }
+
+    .form{
+      .row{
+        .col-lg-6{
+          &:nth-child(odd){
+            padding-#{$end-direction}: 27px;
+          }
+          &:nth-child(even){
+            padding-#{$start-direction}: 27px;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+form{
+  label{
+    font-size: 14px;
+    font-weight: $w-semi-bold;
+    color: $black-text;
+    line-height: 20px;
+    margin-bottom: 5px !important;
+    &.required{
+      position: relative;
+      &::after{
+        content: "*";
+        margin-#{$start-direction}: 5px;
+        color: #C41D2C;
+      }
+    }
+  }
+  .form-control{
+    font-size: 16px;
+    font-weight: $w-normal;
+    color: $grey-text;
+    line-height: 23px;
+    background-color: #fff;
+    height: 48px;
+    border: 2px solid #CDD1D9 !important;
+    border-radius: 4px;
+    padding: 13px 16px ;
+    box-shadow: none !important ;
+    outline: none !important;
+
+    &:disabled, &[readonly]{
+      background-color: #E9E9E9;
+      color: #BCBCBC;
+    }
+    &[type="date"] {
+      position: relative;
+      padding-#{$end-direction}: 35px ;
+      &::-webkit-calendar-picker-indicator{
+        background: none;
+        z-index: 1;
+       position: absolute;
+       width: 100%;
+       height: 100%;
+      }
+      &:before {
+        content: "";
+        color: transparent;
+        background: none;
+        display: block;
+        background-image: url(../images/calendar.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        /* This is the calendar icon in FontAwesome */
+        width: 18px;
+        height: 20px;
+        position: absolute;
+        top: 12px;
+        #{$end-direction}: 12px;
+      }
+    }
+
+  }
+
+    select.form-select{
+      background-image: url(../images/Icons-Chevron-ic-chevron-down.svg);
+      background-size: 25px;
+      padding-#{$end-direction}: 35px !important;
+      font-size: 16px;
+      font-weight: $w-normal;
+      color: $grey-text;
+      line-height: 23px;
+      background-color: #fff;
+      height: 48px;
+      border: 2px solid #CDD1D9 !important;
+      border-radius: 4px;
+      padding: 13px 16px;
+      box-shadow: none !important ;
+      outline: none !important;
+    }
+
+    textarea.form-control{
+      height: auto;
+    }
+
+    .primary-btn{
+      margin-bottom: 25px;
+    }
+
+    .radio-check{
+      .form-check{
+        display: block;
+        position: relative;
+        height: 26px;
+        padding-#{$start-direction}: 22px;
+        margin-bottom: 7px;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        margin-top: 8px;
+        label{
+          margin-bottom: 0 !important;
+          &::before{
+            content: "";
+            position: absolute;
+            top: 4px;
+            #{$start-direction}: 0;
+            height: 16px;
+            width: 16px;
+            border: 2px solid $blue-color2;
+            border-radius: 50%;
+            background-color: transparent;
+          }
+          &::after{
+            content: "";
+            position: absolute;
+            display: none;
+            #{$start-direction}: 4px;
+            top: 8px;
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background-color: $blue-color2;
+          }
+        }
+        input{
+          position: absolute;
+          opacity: 0;
+          cursor: pointer;
+          height: 0;
+          width: 0;
+        }
+        // input:checked ~ label::before {
+        //   background-color: #2196F3;
+        // }
+        input:checked ~ label::after {
+          display: block;
+        }
+      }
+      .form-check-inline{
+        display: inline-block;
+        margin-#{$end-direction}: 60px;
+      
+      }
+    }
+    .checkBox-check{
+
+      .form-check{
+        display: block;
+        position: relative;
+        height: 28px;
+        padding-#{$start-direction}: 28px;
+        margin-bottom: 7px;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        label{
+          margin-bottom: 0 !important;
+          &::before{
+            content: "";
+            position: absolute;
+            top: 2px;
+            #{$start-direction}: 0;
+            height: 20px;
+            width: 20px;
+            border: 2px solid $blue-color2;
+            background-color: transparent;
+          }
+          &::after{
+            content: "";
+            position: absolute;
+            display: none;
+            #{$start-direction}: 7px;
+            top: 5px;
+            width: 6px;
+            height: 12px;
+            border: solid $blue-color2;
+            border-width: 0 2px 2px 0;
+            -webkit-transform: rotate(45deg);
+            -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
+          }
+        }
+        input{
+          position: absolute;
+          opacity: 0;
+          cursor: pointer;
+          height: 0;
+          width: 0;
+        }
+        // input:checked ~ label::before {
+        //   background-color: #2196F3;
+        // }
+        input:checked ~ label::after {
+          display: block;
+        }
+      }
+    }
+}
+
+
+
+
+.modal-content{
+  border: 0;
+  border-radius: 12px;
+  box-shadow: 0 2px 24px rgba($color: $black-text, $alpha: 0.15);
+}
+.modal-body{
+  padding-top: 30px;
+  padding-bottom: 25px;
+
+  .closeModal{
+    position: absolute;
+    top: 8px;
+    #{$end-direction}:11px;
+    border: 0;
+    background: transparent;
+
+  }
+  .success-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .img-box{
+      margin-bottom: 20px;
+      img{
+        
+      }
+    }
+    .content-box{
+      h4{
+        font-size: 14px;
         font-weight: $w-semi-bold;
         color: $black-text;
         margin-bottom: 0;
