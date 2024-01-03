@@ -1,0 +1,19 @@
+<svg id="ic-statistics-workflow" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
+  <rect id="Rectangle_392" data-name="Rectangle 392" width="40" height="40" rx="2" fill="none"/>
+  <g id="ic-statistics-workflow-2" data-name="ic-statistics-workflow" transform="translate(3.333 5)">
+    <g id="Ellipse_118" data-name="Ellipse 118" transform="translate(11.667)" fill="none" stroke="#0b6dde" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5">
+      <circle cx="5" cy="5" r="5" stroke="none"/>
+      <circle cx="5" cy="5" r="3.75" fill="none"/>
+    </g>
+    <g id="Rectangle_118" data-name="Rectangle 118" transform="translate(-0.333 22)" fill="none" stroke="#0b6dde" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5">
+      <rect width="14" height="8" rx="2" stroke="none"/>
+      <rect x="1.25" y="1.25" width="11.5" height="5.5" rx="0.75" fill="none"/>
+    </g>
+    <g id="Rectangle_119" data-name="Rectangle 119" transform="translate(19.667 22)" fill="none" stroke="#0b6dde" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5">
+      <rect width="14" height="8" rx="2" stroke="none"/>
+      <rect x="1.25" y="1.25" width="11.5" height="5.5" rx="0.75" fill="none"/>
+    </g>
+    <path id="Path_384" data-name="Path 384" d="M6,18.667V15.333A3.333,3.333,0,0,1,9.333,12H22.667A3.333,3.333,0,0,1,26,15.333v3.333" transform="translate(0.667 3)" fill="none" stroke="#0b6dde" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"/>
+    <line id="Line_484" data-name="Line 484" y2="5" transform="translate(16.667 10)" fill="none" stroke="#0b6dde" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"/>
+  </g>
+</svg>

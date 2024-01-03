@@ -68,11 +68,23 @@ a:hover {
   margin-bottom: 35px;
 }
 
+.mb-20 {
+  margin-bottom: 20px;
+}
+
+.mb-25 {
+  margin-bottom: 25px;
+}
+
 body {
   position: relative;
   min-height: 100vh;
   background-color: #F6F6F8;
   padding-top: 65px;
+}
+
+body.login-body {
+  background-color: #F3F3F5;
 }
 
 a {
@@ -92,12 +104,18 @@ a {
           justify-content: center;
   font-size: 16px;
   font-weight: 600;
-  color: #fff;
+  color: #fff !important;
   background-color: #0B6DDE;
   border: none;
   border-radius: 4px;
   -webkit-box-shadow: 0 1px 3px rgba(17, 17, 17, 0.07);
           box-shadow: 0 1px 3px rgba(17, 17, 17, 0.07);
+}
+
+.primary-btn.with-icon img {
+  width: 18px;
+  height: 18px;
+  margin-right: 10px;
 }
 
 .secondary-btn {
@@ -113,7 +131,7 @@ a {
           justify-content: center;
   font-size: 16px;
   font-weight: 600;
-  color: #0B6DDE;
+  color: #0B6DDE !important;
   border: 1px solid #0B6DDE;
   border-radius: 4px;
   -webkit-box-shadow: 0 1px 3px rgba(17, 17, 17, 0.07);
@@ -727,6 +745,14 @@ a {
   background-color: #FDE2E4;
 }
 
+.cards-section.admin-cards .card.card4 .number-with-icon .num {
+  color: #39AAE3;
+}
+
+.cards-section.admin-cards .card.card4 .number-with-icon .icon-box {
+  background-color: #DAF0FB;
+}
+
 .table-sec .white-card .top-sec {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1231,6 +1257,136 @@ form .checkBox-check .form-check input:checked ~ label::after {
   font-size: 14px;
   font-weight: 600;
   color: #111111;
+  margin-bottom: 0;
+}
+
+.white-card.chart-area {
+  margin-top: 40px;
+}
+
+.white-card.chart-area .top-sec h3 {
+  font-size: 25px;
+  font-weight: 600;
+  color: #111111;
+  margin-bottom: 25px;
+}
+
+.login {
+  max-width: 925px;
+  margin: auto;
+  margin-top: 60px;
+}
+
+.login .white-card {
+  padding: 60px 50px 100px;
+}
+
+.login .white-card .login-content {
+  max-width: 450px;
+  margin: 0 auto;
+}
+
+.login .white-card .login-content .branding {
+  margin-bottom: 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.login .white-card .login-content .branding .logo1 {
+  width: 245px;
+}
+
+.login .white-card .login-content .branding .logo1 img {
+  width: 100%;
+}
+
+.login .white-card .login-content .branding .logo2 {
+  position: relative;
+  padding-right: 20px;
+  margin-right: 20px;
+  margin-top: 17px;
+}
+
+.login .white-card .login-content .branding .logo2 h2 {
+  font-size: 25px;
+  font-weight: 600;
+  color: #0B6DDE;
+  margin-bottom: 0;
+}
+
+.login .white-card .login-content .branding .logo2::before {
+  content: "";
+  width: 2px;
+  height: 20px;
+  position: absolute;
+  top: 6px;
+  left: 0;
+  background-color: #D2D6DE;
+}
+
+.login .white-card .top-sec {
+  margin-bottom: 35px;
+}
+
+.login .white-card .top-sec h3 {
+  font-size: 25px;
+  font-weight: 600;
+  color: #111111;
+  margin-bottom: 0;
+}
+
+.login .white-card .forget-pass {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.login .white-card .forget-pass a {
+  font-size: 16px;
+  font-weight: 600;
+  color: #0B6DDE;
+  text-decoration: underline;
+}
+
+.login .white-card .input-group .input-group-text {
+  background-color: transparent;
+  border: 2px solid #CDD1D9 !important;
+  border-left: 0 !important;
+  position: relative;
+  border-radius: 4px 0 0 4px;
+  padding: 5px 10px;
+}
+
+.login .white-card .input-group .input-group-text::after {
+  content: "";
+  position: absolute;
+  left: 1px;
+  top: 13px;
+  width: 1px;
+  height: 17px;
+  background-color: #BFC6D4;
+}
+
+.login .white-card .input-group .form-control {
+  border-right: 0 !important;
+  padding-right: 8px;
+}
+
+.login .white-card .login-btn .primary-btn {
+  width: 100%;
+  text-align: center;
   margin-bottom: 0;
 }
 

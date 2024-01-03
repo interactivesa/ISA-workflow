@@ -1,0 +1,9 @@
+<svg id="ic-delete" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30">
+  <rect id="Rectangle_527" data-name="Rectangle 527" width="30" height="30" rx="5" fill="none"/>
+  <g id="Group_55877" data-name="Group 55877" transform="translate(4 4.098)">
+    <path id="Path_621" data-name="Path 621" d="M3,6H18.482" transform="translate(0 -0.56)" fill="none" stroke="#7e8594" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+    <path id="Path_622" data-name="Path 622" d="M17.041,5.44V17.482a1.72,1.72,0,0,1-1.72,1.72H6.72A1.72,1.72,0,0,1,5,17.482V5.44m2.58,0V3.72A1.72,1.72,0,0,1,9.3,2h3.44a1.72,1.72,0,0,1,1.72,1.72V5.44" transform="translate(-0.28)" fill="none" stroke="#7e8594" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+    <line id="Line_581" data-name="Line 581" y2="5" transform="translate(8.741 9.601)" fill="none" stroke="#7e8594" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+    <line id="Line_582" data-name="Line 582" y2="5" transform="translate(12.741 9.601)" fill="none" stroke="#7e8594" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+  </g>
+</svg>

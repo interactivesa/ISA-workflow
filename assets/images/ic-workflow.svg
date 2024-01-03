@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <g id="ic-workflow" transform="translate(-52.464 -330.28)">
+    <rect id="Rectangle_530" data-name="Rectangle 530" width="24" height="24" transform="translate(52.464 330.28)" fill="none"/>
+    <circle id="Ellipse_169" data-name="Ellipse 169" cx="4" cy="4" r="4" transform="translate(60.464 331.28)" fill="none" stroke="#98a1b4" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+    <rect id="Rectangle_528" data-name="Rectangle 528" width="9" height="5" rx="2" transform="translate(53.464 348.28)" fill="none" stroke="#98a1b4" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+    <rect id="Rectangle_529" data-name="Rectangle 529" width="9" height="5" rx="2" transform="translate(66.464 348.28)" fill="none" stroke="#98a1b4" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+    <path id="Path_728" data-name="Path 728" d="M6,16.583V14.292A2.292,2.292,0,0,1,8.292,12h9.166a2.292,2.292,0,0,1,2.292,2.292v2.292" transform="translate(51.59 331.252)" fill="none" stroke="#98a1b4" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+    <line id="Line_599" data-name="Line 599" y2="4" transform="translate(64.464 339.28)" fill="none" stroke="#98a1b4" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+  </g>
+</svg>

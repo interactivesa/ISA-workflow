@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+  <g id="lock-icon" transform="translate(-1.248 -0.811)">
+    <rect id="base" width="18" height="18" transform="translate(1.248 0.811)" fill="none"/>
+    <g id="lock-1" transform="translate(0.543 0.107)">
+      <path id="Path_769" data-name="Path 769" d="M6,8.164V6.623C6,4.073,6.77,2,10.623,2s4.623,2.073,4.623,4.623V8.164" transform="translate(-0.918)" fill="none" stroke="#98a1b4" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+      <path id="Path_770" data-name="Path 770" d="M11.426,17.352A1.926,1.926,0,1,0,9.5,15.426,1.926,1.926,0,0,0,11.426,17.352Z" transform="translate(-1.721 -2.64)" fill="none" stroke="#98a1b4" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+      <path id="Path_771" data-name="Path 771" d="M13.557,19.246h-7.7C2.77,19.246,2,18.475,2,15.393V13.852C2,10.77,2.77,10,5.852,10h7.7c3.082,0,3.852.77,3.852,3.852v1.541C17.409,18.475,16.639,19.246,13.557,19.246Z" transform="translate(0 -1.836)" fill="none" stroke="#98a1b4" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+    </g>
+  </g>
+</svg>

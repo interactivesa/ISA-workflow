@@ -82,3 +82,83 @@ var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggl
 var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
   return new bootstrap.Tooltip(tooltipTriggerEl)
 })
+
+
+
+
+// admin index chart
+
+const bar1 = document.getElementById('barChart1');
+
+  new Chart(bar1, {
+    type: 'bar',
+    data: {
+      labels: [
+       'accusamus tempora et molestiae omnis aut',
+       'qui at beatae et culpa qui',
+       'Annual vacation request workflow',
+       'ducimus quidem voluptatem quae molestiae possimus',
+       'eaque consequuntur ut est beatae omnis',
+       'non aut architecto debitis et id',
+       'accusamus tempora et molestiae omnis aut',
+       'eveniet optio rerum magnam maiores et',
+       'odio sit veritatis qui non laudantium',
+       'accusamus iusto quidem est quidem quis',
+       'nihil rerum voluptas laboriosam natus molestias',
+       'iure quo ipsam est quia et',
+       'facilis sit aliquid molestiae aut quo',
+       'distinctio qui qui nobis est ea',
+       'dolor explicabo eum omnis iusto ut',
+       'molestiae a assumenda consectetur molestiae quis',
+       'sint voluptas temporibus ipsa est facere',
+       'voluptas porro ut voluptate aut incidunt',
+     
+    ],
+      datasets: [{
+        label: 'Running ',
+        maxBarThickness: 25,
+        data: [
+         7,
+         27,
+         36,
+         22,
+         33,
+         12,
+         32,
+         26,
+         39,
+         16,
+         26,
+         36,
+         31,
+         25.5,
+         15,
+         31,
+         24,
+         44
+        ],
+        borderWidth: 0,
+        backgroundColor: '#0B6DDE',
+        color:'#756B65'
+      },]
+    },
+    options: {
+      scales: {
+        y: {
+          beginAtZero: true
+        }
+      },
+      // plugins: {
+      //   legend: {
+      //     // display:false,
+      //       labels: {
+      //           // This more specific font property overrides the global property
+      //           font: {
+      //               size: 50,
+      //               family:"Tajwal"
+      //           }
+      //       }
+      //   }
+      // }
+    }
+  });

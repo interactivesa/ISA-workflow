@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+  <g id="no-of-forms-icon" transform="translate(-152.9 -339.256)">
+    <g id="Rectangle_523" data-name="Rectangle 523" transform="translate(152.9 339.256)" fill="none" stroke="#39aae3" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5">
+      <rect width="32" height="32" stroke="none"/>
+      <rect x="1.25" y="1.25" width="29.5" height="29.5" fill="none"/>
+    </g>
+    <g id="Polygon_2" data-name="Polygon 2" transform="translate(180.9 348.256) rotate(180)" fill="none" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M3.5,0,7,4H0Z" stroke="none"/>
+      <path d="M 3.5 0 L 7 4 L 0 4 L 3.5 0 Z" stroke="none" fill="#39aae3"/>
+    </g>
+    <line id="Line_590" data-name="Line 590" x1="28.548" transform="translate(154.862 350.676)" fill="none" stroke="#39aae3" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"/>
+    <line id="Line_591" data-name="Line 591" x1="16.136" transform="translate(160.832 356.882)" fill="none" stroke="#39aae3" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"/>
+    <line id="Line_592" data-name="Line 592" x1="16.136" transform="translate(160.832 363.088)" fill="none" stroke="#39aae3" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"/>
+  </g>
+</svg>
