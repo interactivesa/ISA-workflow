@@ -1,0 +1,7 @@
+<svg id="ic-copy" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30">
+  <rect id="Rectangle_11424" data-name="Rectangle 11424" width="30" height="30" rx="5" fill="none"/>
+  <g id="copy" transform="translate(4.38 4.38)">
+    <path id="Path_749" data-name="Path 749" d="M14.067,12.224v3.62c0,3.017-1.207,4.224-4.224,4.224H6.224C3.207,20.067,2,18.861,2,15.844v-3.62C2,9.207,3.207,8,6.224,8h3.62C12.861,8,14.067,9.207,14.067,12.224Z" transform="translate(0 -0.828)" fill="none" stroke="#7e8594" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+    <path id="Path_750" data-name="Path 750" d="M20.067,6.224v3.62c0,3.017-1.207,4.224-4.224,4.224H14.9V11.4c0-3.017-1.207-4.224-4.224-4.224H8V6.224C8,3.207,9.207,2,12.224,2h3.62C18.861,2,20.067,3.207,20.067,6.224Z" transform="translate(-0.828)" fill="none" stroke="#7e8594" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+  </g>
+</svg>

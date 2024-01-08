@@ -1,0 +1,7 @@
+<svg id="ic-tick-square" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30">
+  <g id="tick-square" transform="translate(4 4)">
+    <path id="Path_751" data-name="Path 751" d="M8.115,19.473h5.242c4.368,0,6.115-1.747,6.115-6.115V8.115C19.473,3.747,17.725,2,13.357,2H8.115C3.747,2,2,3.747,2,8.115v5.242C2,17.725,3.747,19.473,8.115,19.473Z" fill="none" stroke="#7e8594" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+    <path id="Path_752" data-name="Path 752" d="M7.75,11.642l2.472,2.472L15.176,9.17" transform="translate(-0.727 -0.906)" fill="none" stroke="#7e8594" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+  </g>
+  <rect id="Rectangle_11425" data-name="Rectangle 11425" width="30" height="30" rx="5" fill="none"/>
+</svg>

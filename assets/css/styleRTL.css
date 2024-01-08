@@ -843,6 +843,82 @@ a {
   background-color: #FF9D00;
 }
 
+.table-sec .white-card .home-table table tbody th .admin-status span, .table-sec .white-card .home-table table tbody td .admin-status span {
+  width: 18px;
+  height: 12px;
+  margin-left: 3px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.table-sec .white-card .home-table table tbody th .admin-status p, .table-sec .white-card .home-table table tbody td .admin-status p {
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 400;
+  margin: 0;
+}
+
+.table-sec .white-card .home-table table tbody th .admin-status.active p, .table-sec .white-card .home-table table tbody td .admin-status.active p {
+  color: #3E87DD;
+}
+
+.table-sec .white-card .home-table table tbody th .admin-status.active span, .table-sec .white-card .home-table table tbody td .admin-status.active span {
+  background-image: url(../images/active-ic.svg);
+}
+
+.table-sec .white-card .home-table table tbody th .admin-status.disabled p, .table-sec .white-card .home-table table tbody td .admin-status.disabled p {
+  color: #98A1B4;
+}
+
+.table-sec .white-card .home-table table tbody th .admin-status.disabled span, .table-sec .white-card .home-table table tbody td .admin-status.disabled span {
+  background-image: url(../images/disabled-ic.svg);
+}
+
+.table-sec .white-card .home-table table tbody th .adminFormStatus span, .table-sec .white-card .home-table table tbody td .adminFormStatus span {
+  width: 8px;
+  height: 8px;
+  margin-left: 7px;
+  display: inline-block;
+  vertical-align: middle;
+  border-radius: 50%;
+}
+
+.table-sec .white-card .home-table table tbody th .adminFormStatus p, .table-sec .white-card .home-table table tbody td .adminFormStatus p {
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 400;
+  margin: 0;
+}
+
+.table-sec .white-card .home-table table tbody th .adminFormStatus.Competed p, .table-sec .white-card .home-table table tbody td .adminFormStatus.Competed p {
+  color: #44C055;
+}
+
+.table-sec .white-card .home-table table tbody th .adminFormStatus.Competed span, .table-sec .white-card .home-table table tbody td .adminFormStatus.Competed span {
+  background-color: #44C055;
+}
+
+.table-sec .white-card .home-table table tbody th .adminFormStatus.Uncompleted p, .table-sec .white-card .home-table table tbody td .adminFormStatus.Uncompleted p {
+  color: #F24D5B;
+}
+
+.table-sec .white-card .home-table table tbody th .adminFormStatus.Uncompleted span, .table-sec .white-card .home-table table tbody td .adminFormStatus.Uncompleted span {
+  background-color: #F24D5B;
+}
+
+.table-sec .white-card .home-table table tbody th .tools-with-desc, .table-sec .white-card .home-table table tbody td .tools-with-desc {
+  font-size: 16px;
+  color: #111111;
+  display: inline-block;
+  margin-left: 35px;
+}
+
+.table-sec .white-card .home-table table tbody th .tools-with-desc img, .table-sec .white-card .home-table table tbody td .tools-with-desc img {
+  margin-left: 3px;
+  width: 30px;
+  height: 30px;
+}
+
 .table-sec .white-card .home-table .pagination {
   margin-bottom: 0;
   margin-top: 30px;
@@ -975,6 +1051,11 @@ a {
   padding-right: 35px;
 }
 
+.table-sec .white-card .search-sec .primary-btn {
+  margin-left: 0;
+  margin-right: auto;
+}
+
 .table-sec .table-striped > tbody > tr:nth-of-type(odd) {
   --bs-table-accent-bg: #fff
   ;
@@ -1007,6 +1088,12 @@ a {
 
 .form-sec .white-card .form .row .col-lg-6:nth-child(even) {
   padding-right: 27px;
+}
+
+.form-sec .invalid-feedback {
+  font-size: 11px;
+  margin-top: 2px;
+  color: #C41414;
 }
 
 form label {
@@ -1074,6 +1161,10 @@ form .form-control[type="date"]:before {
   position: absolute;
   top: 12px;
   left: 12px;
+}
+
+form .form-control:focus {
+  border-color: #0B6DDE !important;
 }
 
 form select.form-select {
@@ -1260,6 +1351,56 @@ form .checkBox-check .form-check input:checked ~ label::after {
   margin-bottom: 0;
 }
 
+.modal-body .delete-content {
+  padding: 0 10px;
+}
+
+.modal-body .delete-content .content-box h4 {
+  font-size: 16px;
+  font-weight: 600;
+  color: #111111;
+  margin-bottom: 40px;
+}
+
+.modal-body .delete-content .content-box p {
+  font-size: 16px;
+  font-weight: 400;
+  color: #111111;
+  margin-bottom: 40px;
+}
+
+.modal-body .delete-content .content-box .confirmation-btns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.modal-body .delete-content .content-box .confirmation-btns a {
+  min-width: 100px;
+  height: 48px;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 4px;
+  padding: 13px 24px;
+}
+
+.modal-body .delete-content .content-box .confirmation-btns .cancel {
+  color: #0B6DDE;
+  background-color: transparent;
+  margin-left: 15px;
+}
+
+.modal-body .delete-content .content-box .confirmation-btns .confirm {
+  color: #fff;
+  background-color: #BB2929;
+}
+
 .white-card.chart-area {
   margin-top: 40px;
 }
@@ -1388,6 +1529,10 @@ form .checkBox-check .form-check input:checked ~ label::after {
   width: 100%;
   text-align: center;
   margin-bottom: 0;
+}
+
+.form-sec + .table-sec {
+  margin-top: 40px;
 }
 
 @media (min-width: 1400px) {

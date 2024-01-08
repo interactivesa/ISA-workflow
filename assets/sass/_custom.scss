@@ -670,6 +670,91 @@ a{
                 }
               }
             }
+
+            .admin-status{
+              span{
+                width: 18px;
+                height: 12px;
+                margin-#{$end-direction}: 3px;
+                display: inline-block;
+                vertical-align: middle;
+              }
+              p{
+                display: inline-block;
+                font-size: 16px;
+                font-weight: $w-normal;
+                margin: 0;
+              }
+
+              &.active{
+                p{
+                  color: #3E87DD;
+                }
+                span{
+                  background-image: url(../images/active-ic.svg);
+                }
+               
+              }
+              &.disabled{
+                p{
+                  color: #98A1B4;
+                }
+                span{
+                  background-image: url(../images/disabled-ic.svg);
+                }
+               
+              }
+            }
+
+
+            .adminFormStatus{
+              span{
+                width: 8px;
+                height: 8px;
+                margin-#{$end-direction}: 7px;
+                display: inline-block;
+                vertical-align: middle;
+                border-radius: 50%;
+              }
+              p{
+                display: inline-block;
+                font-size: 16px;
+                font-weight: $w-normal;
+                margin: 0;
+              }
+
+              &.Competed{
+                p{
+                  color:  #44C055;
+                }
+                span{
+                  background-color: #44C055;
+                }
+               
+              }
+              &.Uncompleted{
+                p{
+                  color: #F24D5B;
+                }
+                span{
+                  background-color: #F24D5B
+                }
+               
+              }
+            }
+
+
+            .tools-with-desc{
+              font-size: 16px;
+              color: $black-text;
+              display: inline-block;
+              margin-#{$end-direction}: 35px;
+              img{
+                margin-#{$end-direction}: 3px;
+                width: 30px;
+                height: 30px;
+              }
+            }
           }
         }
       }
@@ -780,6 +865,11 @@ a{
           padding-right: 35px;
         }
       }
+      .primary-btn{
+        margin-#{$end-direction}: 0;
+        margin-#{$start-direction}: auto;
+        
+      }
     }
   }
   .table-striped>tbody>tr:nth-of-type(odd){
@@ -818,6 +908,12 @@ a{
         }
       }
     }
+  }
+
+  .invalid-feedback{
+    font-size: 11px;
+    margin-top: 2px;
+    color: #C41414;
   }
 }
 
@@ -881,6 +977,10 @@ form{
         top: 12px;
         #{$end-direction}: 12px;
       }
+    }
+
+    &:focus{
+      border-color: $blue-color2 !important;
     }
 
   }
@@ -1063,6 +1163,47 @@ form{
       }
     }
   }
+
+  .delete-content{
+    padding: 0 10px;
+    .content-box{
+      h4{
+        font-size: 16px;
+        font-weight: $w-semi-bold;
+        color: $black-text;
+        margin-bottom: 40px;
+      }
+      p{
+        font-size: 16px;
+        font-weight: $w-normal;
+        color: $black-text;
+        margin-bottom: 40px;
+      }
+      .confirmation-btns{
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        a{
+          min-width: 100px;
+          height: 48px;
+          font-size: 16px;
+          font-weight: $w-semi-bold;
+          border-radius: 4px;
+          padding: 13px 24px;
+
+        }
+        .cancel{
+          color: $blue-color2;
+          background-color: transparent;
+          margin-#{$end-direction}:15px ;
+        }
+        .confirm{
+          color: #fff;
+          background-color: #BB2929;
+        }
+      }
+    }
+  }
 }
 .white-card{
   &.chart-area{
@@ -1183,4 +1324,8 @@ form{
       }
     }
   }
+}
+
+.form-sec + .table-sec{
+  margin-top: 40px;
 }
