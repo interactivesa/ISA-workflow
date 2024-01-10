@@ -57,6 +57,35 @@ a{
   }
 }
 
+.edit-btn{
+  padding: 13px 13px 11px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  font-weight: $w-semi-bold;
+  color: $blue-color2 !important;
+  border: none;
+  background-color: #F2F6FF;
+  border-radius: 4px;
+  &.with-icon{
+    img{
+      width: 16px;
+      height: 16px;
+      margin-#{$start-direction}:10px ;
+    }
+  }
+}
+.regular-a{
+  font-size: 16px;
+  font-weight: $w-semi-bold;
+  color: $blue-color2 !important;
+  text-decoration: underline !important;
+  border: none;
+  box-shadow: none;
+  background-color: transparent;
+  padding: 13px 24px 12px;
+}
 .white-card{
   background-color: #fff;
   border-radius: $raduis-normal;
@@ -1328,4 +1357,276 @@ form{
 
 .form-sec + .table-sec{
   margin-top: 40px;
+}
+
+
+
+.basicData{
+  margin-top: 40px;
+
+  .basic-container{
+    max-width: 720px;
+    margin: 20px auto;
+    .stipper{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 60px;
+      .step{
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-direction: column;
+        .number{
+          width: 42px;
+          height: 42px;
+          background-color: #98A1B4;
+          color: #fff;
+          border-radius: 50%;
+          position: relative;
+          transition: 300ms;
+          font-size: 18px;
+          font-weight: $w-semi-bold;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          &::after{
+            content: "";
+            position: absolute;
+            width: 470px;
+            height: 2px;
+            background-color: #CBD1DE;
+            #{$start-direction}: calc(100% + 15px);
+            top: 50%;
+          }
+        }
+        .desc{
+          font-size: 18px;
+          font-weight: $w-medium;
+          color: $black-text;
+          margin-top: 16px;
+
+        }
+
+        &.active{
+          .number{
+            background-color: $blue-color2;
+          }
+        }
+        &:last-child{
+          .number{
+            &::after{
+              display: none;
+            }
+          }
+        }
+      }
+    }
+
+    .form-sec{
+      .form-title{
+        font-size: 25px;
+        font-weight: $w-semi-bold;
+        color: $black-text;
+        margin-bottom: 35px;
+      }
+
+      .input-with-btn{
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+
+        .input-beside-btn{
+          width: 100%;
+        }
+        .secondary-btn{
+          margin-#{$start-direction}: 25px;
+          min-width: 135px;
+          height: 48px;
+        }
+        .edit-btn{
+          margin-#{$start-direction}: 20px;
+          
+        }
+      }
+      .action{
+        .checkBox-check {
+          .form-check{
+            margin-bottom: 16px;
+          }
+        }
+        &+.action{
+          margin-top: 25px;
+        }
+      }
+
+
+      .hidden-section{
+        height: 0px;
+        opacity: 0;
+        transform: translateY(-100px);
+        display: none;
+        margin-top: 50px;
+        &.show{
+          height: auto;
+          display: block;
+          transform: translate(0);
+          opacity: 1;
+        }
+
+
+
+        .borderd-fieldset{
+          padding: 45px 25px 30px;
+          border: 1px solid #DADDE4;
+          border-radius: $raduis-normal;
+          position: relative;
+          margin-top: 15px;
+          h3{
+            font-size: 20px;
+            font-weight: $w-semi-bold;
+            color: $black-text;
+            margin-bottom: 0;
+            position: absolute;
+            top: -19px;
+            #{$start-direction}:17px;
+            background-color: #fff;
+            padding: 5px 12px;
+          }
+        }
+      }
+      .btns-area{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 70px;
+      }
+      .primary-btn{
+        margin-bottom: 0;
+        padding: 13px 24px 12px;
+        img{
+          margin-#{$start-direction}: 45px;
+          width: 6px;
+          height: 12px;
+        }
+      }
+    }
+  }
+}
+
+#conditionsModal{
+  .modal-dialog{
+    max-width: 855px;
+  }
+  .modal-body{
+    padding: 30px 22px 40px;
+    .closeModal{
+      top: 25px;
+      #{$end-direction}:25px
+    }
+  }
+  .Modal-header{
+    h4{
+      font-size: 16px;
+      font-weight: $w-semi-bold;
+      color: $black-text;
+      margin-bottom: 35px;
+    }
+  }
+  .content-box{
+    table{
+      thead{
+        background-color: #F1F2F5;
+        th{
+          font-size: 16px;
+          font-weight: $w-semi-bold;
+          color: $blue-color;
+          border-color: #FFFFFF;
+          border-#{$end-direction}: 1px solid #FFFFFF;
+          padding: 15px 10px 14px;
+        }
+      }
+      tbody{
+        .delete-row{
+          height: 48px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        tr{
+          &:nth-of-type(odd){
+            --bs-table-accent-bg: #fff;
+          }
+          &:nth-of-type(even){
+            --bs-table-accent-bg: #F5F5F9;
+          }
+
+          td{
+            border: 0;
+          }
+        }
+      }
+    }
+  }
+  .addRow{
+    margin-top: 15px;
+  }
+  .btns-area{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    margin-top: 45px;
+    .cancel{
+      padding: 13px 24px 11px;
+      height: 48px;
+      margin-#{$end-direction}: 15px;
+      font-size: 16px;
+      font-weight: $w-semi-bold;
+      color: $blue-color2;
+    }
+    .save{}
+  }
+}
+
+.request-created{
+  margin-top: 100px;
+  margin-bottom: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  border: 2px solid #E0E3E9;
+  border-radius: 16px;
+  padding: 35px 50px 40px;
+  .img-box{
+    width: 95px;
+    height: 95px;
+    padding: 9px;
+    margin-bottom: 28px;
+    img{
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .content-box{
+    margin-bottom: 40px;
+    h3{
+      font-size: 22px;
+      color: $black-text;
+      font-weight: $w-normal;
+      line-height: 32px;
+      span{
+        font-weight: $w-semi-bold;
+        display: block;
+      }
+    }
+  }
+  .btns-box{
+    .primary-btn{
+      margin-bottom: 16px;
+    }
+  }
 }

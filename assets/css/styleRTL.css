@@ -76,6 +76,10 @@ a:hover {
   margin-bottom: 25px;
 }
 
+.mt-60 {
+  margin-top: 60px;
+}
+
 body {
   position: relative;
   min-height: 100vh;
@@ -142,6 +146,43 @@ a {
   width: 18px;
   height: 18px;
   margin-right: 10px;
+}
+
+.edit-btn {
+  padding: 13px 13px 11px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 16px;
+  font-weight: 600;
+  color: #0B6DDE !important;
+  border: none;
+  background-color: #F2F6FF;
+  border-radius: 4px;
+}
+
+.edit-btn.with-icon img {
+  width: 16px;
+  height: 16px;
+  margin-right: 10px;
+}
+
+.regular-a {
+  font-size: 16px;
+  font-weight: 600;
+  color: #0B6DDE !important;
+  text-decoration: underline !important;
+  border: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  background-color: transparent;
+  padding: 13px 24px 12px;
 }
 
 .white-card {
@@ -1533,6 +1574,340 @@ form .checkBox-check .form-check input:checked ~ label::after {
 
 .form-sec + .table-sec {
   margin-top: 40px;
+}
+
+.basicData {
+  margin-top: 40px;
+}
+
+.basicData .basic-container {
+  max-width: 720px;
+  margin: 20px auto;
+}
+
+.basicData .basic-container .stipper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 60px;
+}
+
+.basicData .basic-container .stipper .step {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.basicData .basic-container .stipper .step .number {
+  width: 42px;
+  height: 42px;
+  background-color: #98A1B4;
+  color: #fff;
+  border-radius: 50%;
+  position: relative;
+  -webkit-transition: 300ms;
+  transition: 300ms;
+  font-size: 18px;
+  font-weight: 600;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.basicData .basic-container .stipper .step .number::after {
+  content: "";
+  position: absolute;
+  width: 470px;
+  height: 2px;
+  background-color: #CBD1DE;
+  right: calc(100% + 15px);
+  top: 50%;
+}
+
+.basicData .basic-container .stipper .step .desc {
+  font-size: 18px;
+  font-weight: 500;
+  color: #111111;
+  margin-top: 16px;
+}
+
+.basicData .basic-container .stipper .step.active .number {
+  background-color: #0B6DDE;
+}
+
+.basicData .basic-container .stipper .step:last-child .number::after {
+  display: none;
+}
+
+.basicData .basic-container .form-sec .form-title {
+  font-size: 25px;
+  font-weight: 600;
+  color: #111111;
+  margin-bottom: 35px;
+}
+
+.basicData .basic-container .form-sec .input-with-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.basicData .basic-container .form-sec .input-with-btn .input-beside-btn {
+  width: 100%;
+}
+
+.basicData .basic-container .form-sec .input-with-btn .secondary-btn {
+  margin-right: 25px;
+  min-width: 135px;
+  height: 48px;
+}
+
+.basicData .basic-container .form-sec .input-with-btn .edit-btn {
+  margin-right: 20px;
+}
+
+.basicData .basic-container .form-sec .action .checkBox-check .form-check {
+  margin-bottom: 16px;
+}
+
+.basicData .basic-container .form-sec .action + .action {
+  margin-top: 25px;
+}
+
+.basicData .basic-container .form-sec .hidden-section {
+  height: 0px;
+  opacity: 0;
+  -webkit-transform: translateY(-100px);
+          transform: translateY(-100px);
+  display: none;
+  margin-top: 50px;
+}
+
+.basicData .basic-container .form-sec .hidden-section.show {
+  height: auto;
+  display: block;
+  -webkit-transform: translate(0);
+          transform: translate(0);
+  opacity: 1;
+}
+
+.basicData .basic-container .form-sec .hidden-section .borderd-fieldset {
+  padding: 45px 25px 30px;
+  border: 1px solid #DADDE4;
+  border-radius: 8px;
+  position: relative;
+  margin-top: 15px;
+}
+
+.basicData .basic-container .form-sec .hidden-section .borderd-fieldset h3 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #111111;
+  margin-bottom: 0;
+  position: absolute;
+  top: -19px;
+  right: 17px;
+  background-color: #fff;
+  padding: 5px 12px;
+}
+
+.basicData .basic-container .form-sec .btns-area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 70px;
+}
+
+.basicData .basic-container .form-sec .primary-btn {
+  margin-bottom: 0;
+  padding: 13px 24px 12px;
+}
+
+.basicData .basic-container .form-sec .primary-btn img {
+  margin-right: 45px;
+  width: 6px;
+  height: 12px;
+}
+
+#conditionsModal .modal-dialog {
+  max-width: 855px;
+}
+
+#conditionsModal .modal-body {
+  padding: 30px 22px 40px;
+}
+
+#conditionsModal .modal-body .closeModal {
+  top: 25px;
+  left: 25px;
+}
+
+#conditionsModal .Modal-header h4 {
+  font-size: 16px;
+  font-weight: 600;
+  color: #111111;
+  margin-bottom: 35px;
+}
+
+#conditionsModal .content-box table thead {
+  background-color: #F1F2F5;
+}
+
+#conditionsModal .content-box table thead th {
+  font-size: 16px;
+  font-weight: 600;
+  color: #0E58AE;
+  border-color: #FFFFFF;
+  border-left: 1px solid #FFFFFF;
+  padding: 15px 10px 14px;
+}
+
+#conditionsModal .content-box table tbody .delete-row {
+  height: 48px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#conditionsModal .content-box table tbody tr:nth-of-type(odd) {
+  --bs-table-accent-bg: #fff;
+}
+
+#conditionsModal .content-box table tbody tr:nth-of-type(even) {
+  --bs-table-accent-bg: #F5F5F9;
+}
+
+#conditionsModal .content-box table tbody tr td {
+  border: 0;
+}
+
+#conditionsModal .addRow {
+  margin-top: 15px;
+}
+
+#conditionsModal .btns-area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-top: 45px;
+}
+
+#conditionsModal .btns-area .cancel {
+  padding: 13px 24px 11px;
+  height: 48px;
+  margin-left: 15px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #0B6DDE;
+}
+
+.request-created {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: 2px solid #E0E3E9;
+  border-radius: 16px;
+  padding: 35px 50px 40px;
+}
+
+.request-created .img-box {
+  width: 95px;
+  height: 95px;
+  padding: 9px;
+  margin-bottom: 28px;
+}
+
+.request-created .img-box img {
+  width: 100%;
+  height: 100%;
+}
+
+.request-created .content-box {
+  margin-bottom: 40px;
+}
+
+.request-created .content-box h3 {
+  font-size: 22px;
+  color: #111111;
+  font-weight: 400;
+  line-height: 32px;
+}
+
+.request-created .content-box h3 span {
+  font-weight: 600;
+  display: block;
+}
+
+.request-created .btns-box .primary-btn {
+  margin-bottom: 16px;
 }
 
 @media (min-width: 1400px) {

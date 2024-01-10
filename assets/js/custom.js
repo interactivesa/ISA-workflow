@@ -162,3 +162,14 @@ const bar1 = document.getElementById('barChart1');
       // }
     }
   });
+
+
+
+  // advanced-a
+  $(".advanced-a").on("click", function (e) {
+    console.log("advanced-collapse");
+    $(".advanced-a span").toggleClass("d-none")
+    $(".hidden-section").toggleClass("show");
+    e.stopPropagation();
+    
+    });
