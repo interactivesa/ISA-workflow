@@ -566,8 +566,8 @@ a {
   background-color: #E82536;
   color: #fff;
   font-size: 10px;
-  right: 10px;
-  top: 10px;
+  right: -10px;
+  top: -10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -578,6 +578,131 @@ a {
       -ms-flex-pack: center;
           justify-content: center;
   border-radius: 50%;
+}
+
+.header .right-sec .notifications .notifications-dropdown::after {
+  display: none;
+}
+
+.header .right-sec .notifications .more-dropdown::after {
+  display: none;
+}
+
+.header .right-sec .notifications .dropdown-menu {
+  width: 311px;
+  height: 291px;
+  padding: 13px 10px 11px;
+}
+
+.header .right-sec .notifications .dropdown-top-sec {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 16px;
+}
+
+.header .right-sec .notifications .dropdown-top-sec h4 {
+  font-size: 16px;
+  font-weight: 600;
+  color: #111111;
+  margin: 0;
+}
+
+.header .right-sec .notifications .dropdown-top-sec .dropdown a {
+  width: 24px;
+  height: 24px;
+  background-color: #E6E9EF;
+  border-radius: 50%;
+  padding: 0 5px;
+}
+
+.header .right-sec .notifications .dropdown-top-sec .dropdown a img {
+  width: 13px;
+  height: 13px;
+}
+
+.header .right-sec .notifications .nav-tabs {
+  border: 0;
+  margin-bottom: 15px;
+}
+
+.header .right-sec .notifications .nav-tabs .nav-item .nav-link {
+  border: 0;
+  font-size: 14px;
+  color: #62697A;
+  margin-right: 10px;
+  padding: 5px 8px;
+}
+
+.header .right-sec .notifications .nav-tabs .nav-item .nav-link.active {
+  background-color: #E6E9EF;
+  border-radius: 6px;
+}
+
+.header .right-sec .notifications .nav-tabs .nav-item:last-child .nav-link {
+  margin-right: 0;
+}
+
+.header .right-sec .notifications .nav-tabs .last {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin-left: auto;
+}
+
+.header .right-sec .notifications .nav-tabs .last .see-all {
+  font-size: 14px;
+  color: #0B6DDE;
+  text-decoration: underline;
+}
+
+.header .right-sec .notifications .new-notification {
+  margin-bottom: 10px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #E5E5E5;
+  margin-left: 13px;
+  position: relative;
+}
+
+.header .right-sec .notifications .new-notification:last-child {
+  border-bottom: 0;
+}
+
+.header .right-sec .notifications .new-notification .title {
+  font-size: 14px;
+  font-weight: 500;
+  color: #888888;
+}
+
+.header .right-sec .notifications .new-notification .date-time p {
+  position: unset;
+  font-size: 12px;
+  color: #BCBCBC;
+  margin: 2px 5px;
+  margin-bottom: 0;
+  display: inline-block;
+}
+
+.header .right-sec .notifications .new-notification.unread .title {
+  color: #111111;
+}
+
+.header .right-sec .notifications .new-notification.unread::before {
+  content: "";
+  width: 8px;
+  height: 8px;
+  background-color: #0B6DDE;
+  border-radius: 50%;
+  position: absolute;
+  left: -13px;
+  top: 7px;
 }
 
 .header .right-sec .user-section {
@@ -1105,6 +1230,15 @@ a {
 .table-sec .table-striped > tbody > tr:nth-of-type(even) {
   --bs-table-accent-bg: #F5F5F9
   ;
+}
+
+.table-sec .selected-row {
+  --bs-table-accent-bg: #CBE2FC !important
+  ;
+}
+
+.table-sec tr td:first-of-type {
+  padding-left: 30px;
 }
 
 .form-sec .white-card {

@@ -171,10 +171,102 @@
               </a>
             </div>
             <div class="notifications">
-              <a href="#">
-                <img src="../assets/images/noti.svg" alt="">
-                <span>2</span>
-              </a>
+
+              <div class="dropdown">
+                <a class="notifications-dropdown dropdown-toggle" type="button" id="dropdownMenuButton3" data-bs-toggle="dropdown" aria-expanded="false">
+                 <img src="../assets/images/noti.svg" alt="">
+                 <span>2</span>
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton3">
+                  <div class="dropdown-top-sec">
+                    <h4>
+                      Notifications
+                    </h4>
+                    <div class="dropdown">
+                      <a class="more-dropdown dropdown-toggle" type="button" id="dropdown2" data-bs-toggle="dropdown" aria-expanded="false">
+                        <img src="../assets/images/more-noti.svg" alt="">
+                      </a>
+                      <ul class="dropdown-menu " aria-labelledby="dropdown2">
+                        <li><a class="dropdown-item" href="#">
+                          <img src="../assets/images/check-noti.svg" alt="">
+                          Mark all as read
+                        </a></li>
+                        <li><a class="dropdown-item" href="#">
+                          <img src="../assets/images/setting-noti.svg" alt="">
+                          Notification Settings
+                        </a></li>
+                        
+                      </ul>
+                    </div>
+                  </div>
+
+                  <ul class="nav nav-tabs" id="myTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link active" id="All-tab" data-bs-toggle="tab" data-bs-target="#All" type="button" role="tab" aria-controls="All" aria-selected="true">
+                        All
+                      </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link" id="Unread-tab" data-bs-toggle="tab" data-bs-target="#Unread" type="button" role="tab" aria-controls="Unread" aria-selected="false">
+                        Unread
+                      </button>
+                    </li>
+                    <li class="last">
+                      <a href="#" class="see-all">
+                        See all
+                      </a>
+                    </li>
+                  </ul>
+                  <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade show active" id="All" role="tabpanel" aria-labelledby="All-tab">
+                      <div class="new-notification unread">
+                        <div class="title">
+                          This is an unread notification item.
+                        </div>
+                        <div class="date-time">
+                          <p>
+                            28/12/2023  
+                          </p>
+                          -
+                          <p>
+                            05:25 PM
+                          </p>
+                        </div>
+                      </div>
+                      <div class="new-notification unread">
+                        <div class="title">
+                          This is an unread notification item.
+                        </div>
+                        <div class="date-time">
+                          <p>
+                            28/12/2023  
+                          </p>
+                          -
+                          <p>
+                            05:25 PM
+                          </p>
+                        </div>
+                      </div>
+                      <div class="new-notification ">
+                        <div class="title">
+                          This is an unread notification item.
+                        </div>
+                        <div class="date-time">
+                          <p>
+                            28/12/2023  
+                          </p>
+                          -
+                          <p>
+                            05:25 PM
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="tab-pane fade" id="Unread" role="tabpanel" aria-labelledby="Unread-tab">...</div>
+                  </div>
+
+                </ul>
+              </div>
             </div>
             <div class="user-section">
               <div class="dropdown">
@@ -443,7 +535,7 @@
                     </td>
                   </tr>
     
-                  <tr>
+                  <tr class="selected-row">
                     <td>
                       3
                     </td>
