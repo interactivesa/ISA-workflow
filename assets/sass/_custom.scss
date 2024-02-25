@@ -422,15 +422,55 @@ a{
           display: none;
         }
       }
+      .notifications-list.show{
+        display: none;
+      }
+      .dis-none{
+        display: none;
+      }
       .more-dropdown{
         &::after{
           display: none;
         }
       }
-      .dropdown-menu{
+      .notifications-list{
         width: 311px;
         height: 291px;
         padding: 13px 10px 11px;
+        position: absolute;
+        background-color: #fff;
+        top: 47px;
+        #{$start-direction}: -20px;
+        box-shadow: 0 8px 25px rgba($color: $black-text, $alpha: 0.16);
+
+        .tab-content{
+          height: 175px;
+          overflow-y: auto;
+          padding-#{$end-direction}: 15px;
+
+          &::-webkit-scrollbar {
+            width: 5px;
+            border-radius: 110px;
+          }
+          
+          /* Track */
+          &::-webkit-scrollbar-track {
+            background: #fff;
+            border-radius: 110px;
+          }
+           
+          /* Handle */
+          &::-webkit-scrollbar-thumb {
+            background: #C7CCD8; 
+            border-radius: 110px;
+          }
+          
+          /* Handle on hover */
+          // &::-webkit-scrollbar-thumb:hover {
+          //   background: #555; 
+          // }
+        }
+
       }
       .dropdown-top-sec{
         display: flex;
@@ -443,16 +483,58 @@ a{
           color: $black-text;
           margin: 0;
         }
-       .dropdown{
-        a{
+       .dropdown.more-actions{
+        a.more-dropdown{
           width: 24px;
           height: 24px;
-          background-color: #E6E9EF;
+          background-color: #fff;
           border-radius: 50%;
           padding: 0 5px;
+          transition: 300ms;
           img{
             width: 13px;
             height: 13px;
+          }
+          &.show{
+            background-color: #E6E9EF;
+          }
+        }
+        .dropdown-menu{
+          width: auto;
+          height: auto;
+          border: 1px solid #98A1B4;
+          padding: 10px;
+          padding-#{$start-direction}: 8px;
+          border-radius: 0;
+          top: 13px !important;
+          &::before{
+            content: "";
+            width: 20px;
+            height: 14px;
+            position: absolute;
+            #{$end-direction}:5px;
+            top: -12px;
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-image: url(../images/polyyyy.svg);
+          }
+          li{
+            margin-bottom: 6px;
+            &:last-of-type{
+              margin-bottom: 0px;
+            }
+            a{
+              font-size: 14px;
+              font-weight: $w-normal;
+              color: #62697A;
+              padding: 0;
+              background-color: inherit;
+              img{
+                margin-#{$end-direction}: 10px;
+                width: 16px;
+                height: 16px;
+              }
+            }
           }
         }
        }
@@ -461,7 +543,7 @@ a{
       }
       .nav-tabs{
         border: 0;
-        margin-bottom: 15px;
+        margin-bottom: 14px;
         .nav-item{
           
           .nav-link{
@@ -469,7 +551,7 @@ a{
             font-size: 14px;
             color: #62697A;
             margin-#{$end-direction}: 10px;
-            padding: 5px 8px;
+            padding: 2px 8px;
             &.active{
               background-color: #E6E9EF;
               border-radius: 6px;
@@ -493,7 +575,7 @@ a{
       }
       .new-notification{
         margin-bottom: 10px;
-        padding-bottom: 5px;
+        padding-bottom: 3px;
         border-bottom: 1px solid #E5E5E5;
         margin-#{$start-direction}:13px;
         position: relative;
@@ -506,11 +588,15 @@ a{
           color: $grey-text;
         }
         .date-time{
+          position: unset;
+          font-size: 12px;
+          color: #BCBCBC;
+
           p{
             position: unset;
             font-size: 12px;
             color: #BCBCBC;
-            margin: 2px 5px;
+            margin: 0px 5px;
             margin-bottom: 0;
             display: inline-block ;
           }

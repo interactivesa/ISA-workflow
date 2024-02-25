@@ -173,3 +173,14 @@ const bar1 = document.getElementById('barChart1');
     e.stopPropagation();
     
     });
+
+  // notification-a
+  $(".notifications-dropdown").on("click", function (e) {
+    console.log("notifications-dropdown-collapse");
+    $(".notifications-list").toggleClass("d-block")
+    // $(".notifications-list").removeClass("show")
+    e.stopPropagation();
+    
+    });
+
+
